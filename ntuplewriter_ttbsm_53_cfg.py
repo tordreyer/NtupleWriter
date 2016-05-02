@@ -22,7 +22,7 @@ options.register ('tlbsmTag',
                   'TLBSM tag use in production')
 
 options.register ('useData',
-                  False,
+                  True,
                   VarParsing.multiplicity.singleton,
                   VarParsing.varType.int,
                   'Run this on real data')

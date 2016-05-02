@@ -62,6 +62,8 @@ class Jet : public FlavorParticle{
 
   void add_pfconstituents_index(int ind){m_pfconstituents_indices.push_back(ind);}
 
+  void set_pfconstituents_indices(std::vector<unsigned int> pf_indices){m_pfconstituents_indices = pf_indices;} 
+
   int nTracks() const{return m_nTracks;}
   float jetArea() const{return m_jetArea;}
   int numberOfDaughters() const{return m_numberOfDaughters;} 
