@@ -35,6 +35,6 @@ if [ ! -h QjetsPlugin.h ]; then ln -s ../interface/QjetsPlugin.h .; fi;
 
 # to allow CMSSW-like includes such as "UHHAnalysis/NtupleWriter/interface/..." from within standalone sframe,
 # emulate the CMSSW directory structure by creating corresponding symlinks in $SFRAME_DIR:
-#cd $SFRAME_DIR
-#mkdir UHHAnalysis
-#ln -s ../NtupleWriter UHHAnalysis
+cd $SFRAME_DIR
+mkdir UHHAnalysis
+ln -s ../NtupleWriter UHHAnalysis
