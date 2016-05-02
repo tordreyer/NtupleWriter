@@ -16,7 +16,6 @@
 #pragma link C++ class fastjet::NjettinessPlugin+;
 #pragma link C++ class fastjet::Nsubjettiness+;
 #pragma link C++ class JetProps+;
-#pragma link C++ class GenJetProps+;
 #pragma link C++ class Qjets+;
 #pragma link C++ class QjetsPlugin+;
 
@@ -48,7 +47,4 @@
 #pragma link C++ class GenInfo+;
 #pragma link C++ class GenParticle+;
 #pragma link C++ class std::vector<GenParticle>+;
-
-#pragma link C++ class TopGenJet+;
-#pragma link C++ class std::vector<TopGenJet>+;
 #endif // __CINT__

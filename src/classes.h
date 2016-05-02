@@ -32,8 +32,8 @@ namespace {
     std::vector<GenJetWithParts> genjetswithparts;
     GenTopJet gentopjet;
     std::vector<GenTopJet> gentopjets;
-    GenTopJet topgenjet;
-    std::vector<TopGenJet> topgenjets;
+    //  GenTopJet topgenjet;
+    //  std::vector<TopGenJet> topgenjets;
     Electron ele; 
     std::vector<Electron> eles; 
     Muon mu; 

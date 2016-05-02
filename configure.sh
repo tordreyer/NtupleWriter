@@ -18,13 +18,13 @@ if [ ! -h MET.h ]; then ln -s ../Objects/MET.h .; fi;
 if [ ! -h Muon.h ]; then ln -s ../Objects/Muon.h .; fi;
 if [ ! -h Tau.h ]; then ln -s ../Objects/Tau.h .; fi;
 if [ ! -h TopJet.h ]; then ln -s ../Objects/TopJet.h .; fi;
-if [ ! -h TopGenJet.h ]; then ln -s ../Objects/TopGenJet.h .; fi;
+#if [ ! -h TopGenJet.h ]; then ln -s ../Objects/TopGenJet.h .; fi;
 if [ ! -h Particle.h ]; then ln -s ../Objects/Particle.h .; fi;
 if [ ! -h PFParticle.h ]; then ln -s ../Objects/PFParticle.h .; fi;
 if [ ! -h Photon.h ]; then ln -s ../Objects/Photon.h .; fi;
 if [ ! -h PrimaryVertex.h ]; then ln -s ../Objects/PrimaryVertex.h .; fi;
 
-if [ ! -h GenJetProps.h ]; then ln -s ../interface/GenJetProps.h .; fi;
+#if [ ! -h GenJetProps.h ]; then ln -s ../interface/GenJetProps.h .; fi;
 if [ ! -h JetProps.h ]; then ln -s ../interface/JetProps.h .; fi;
 if [ ! -h Njettiness.h ]; then ln -s ../interface/Njettiness.h .; fi;
 if [ ! -h Njettiness.icc ]; then ln -s ../interface/Njettiness.icc .; fi;
