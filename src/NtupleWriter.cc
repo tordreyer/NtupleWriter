@@ -1258,7 +1258,7 @@ PFParticle PFCandidate2PFParticle(const reco::PFCandidate & pf, bool fromjet, bo
     
 // add pf to pfs, ensuring there is no duplication. Retuns the index
 // of pf in pfs.
-size_t add_pfpart(const reco::PFCandidate & pf, vector<PFParticle> & pfs, bool fromjet, bool fromiso, bool frompuiso){
+ size_t add_pfpart(const reco::PFCandidate & pf, std::vector<PFParticle> & pfs, bool fromjet, bool fromiso, bool frompuiso){
     for(size_t j=0; j<pfs.size(); ++j){
       PFParticle spf = pfs[j];
       // note: static_cast to float is to ensure the comparison is done with the same precision as these quantities
@@ -1277,7 +1277,7 @@ size_t add_pfpart(const reco::PFCandidate & pf, vector<PFParticle> & pfs, bool f
     return pfs.size()-1;
 }
 
- size_t add_genpart(const reco::GenParticle & jetgenp, vector<GenParticle> & genparts){
+ size_t add_genpart(const reco::GenParticle & jetgenp, std::vector<GenParticle> & genparts){
    for(size_t j=0; j<genparts.size();j++){
      GenParticle sgenpart = genparts[j];
      double r = fabs(static_cast<float>(jetgenp.eta()-sgenpart.eta()))+fabs(static_cast<float>(jetgenp.phi()-sgenpart.phi()));
